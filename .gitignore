@@ -50,3 +50,4 @@ nbdist/
 bin/
 out/
 target/
+/.metadata/
