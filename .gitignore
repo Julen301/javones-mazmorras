@@ -50,3 +50,6 @@ nbdist/
 bin/
 out/
 target/
+# Metadata Eclipse
+.metadata/
+RemoteSystemsTempFiles/
