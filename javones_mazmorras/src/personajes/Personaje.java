@@ -51,21 +51,27 @@ public class Personaje {
 	public void setProtegido(boolean protegido) {
 		this.protegido = protegido;
 	}
+	
 	public boolean estaPRotegido() {
 		return protegido;
 	}
+	
 	public Inventario getInventarios() {
 		return inventario;
 	}
+	
 	public void agregarEquipamiento(Equipamiento equipamiento) {
 		inventario.agregarEquipamiento(equipamiento);
 	}
+	
 	public String getNombre() {
 		return nombre;
 	}
+	
 	public int getNIvel() {
 		return nivel;
 	}
+	
 	public int getPuntosVida() {
 		return puntosVida;
 	}
