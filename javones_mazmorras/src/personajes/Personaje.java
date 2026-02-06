@@ -1,5 +1,6 @@
 package personajes;
 
+import items.Equipamiento;
 import items.Inventario;
 
 public class Personaje {
@@ -47,4 +48,29 @@ public class Personaje {
 		System.out.println(" " + nombre + " se cura " + cantidad + " puntos. Vida actual: " + puntosVida);
 		
 	}
+	public void setProtegido(boolean protegido) {
+		this.protegido = protegido;
+	}
+	public boolean estaPRotegido() {
+		return protegido;
+	}
+	public Inventario getInventarios() {
+		return inventario;
+	}
+	public void agregarEquipamiento(Equipamiento equipamiento) {
+		inventario.agregarEquipamiento(equipamiento);
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public int getNIvel() {
+		return nivel;
+	}
+	public int getPuntosVida() {
+		return puntosVida;
+	}
+	
+	
+	
+	
 }

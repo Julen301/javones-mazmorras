@@ -10,7 +10,7 @@ public class Inventario {
 		  this.equipamiento = new ArrayList<>();
 	}
 	
-	public void agrefarEquipamiento(Equipamiento equipamiento) {
+	public void agregarEquipamiento(Equipamiento equipamiento) {
 		this.equipamiento.add(equipamiento);
 		System.out.println(" " + equipamiento.getNombre() + " añadido al inventario");
 	}
