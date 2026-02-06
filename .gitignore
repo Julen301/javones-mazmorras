@@ -50,6 +50,8 @@ nbdist/
 bin/
 out/
 target/
+personaje-base
 # Metadata Eclipse
 .metadata/
 RemoteSystemsTempFiles/
+main
