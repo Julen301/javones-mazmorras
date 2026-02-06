@@ -1,4 +1,4 @@
-package mago;
+package personajes;
 
 public class Mago extends Personaje {
     private int mana;
@@ -11,15 +11,15 @@ public class Mago extends Personaje {
     public void lanzarHechizo(int costeMana) {
         if (mana >= costeMana) {
             mana -= costeMana;
-            System.out.println("✨ " + nombre + " lanza un hechizo! Maná gastado: " + costeMana + " | Maná restante: " + mana);
+            System.out.println(" " + nombre + " lanza un hechizo! Maná gastado: " + costeMana + " | Maná restante: " + mana);
         } else {
-            System.out.println("❌ " + nombre + " no tiene suficiente maná. Maná actual: " + mana + " | Necesario: " + costeMana);
+            System.out.println(" " + nombre + " no tiene suficiente maná. Maná actual: " + mana + " | Necesario: " + costeMana);
         }
     }
 
     public void recargarMana(int cantidad) {
         mana += cantidad;
-        System.out.println("🔵 " + nombre + " recarga " + cantidad + " de maná. Maná actual: " + mana);
+        System.out.println(" " + nombre + " recarga " + cantidad + " de maná. Maná actual: " + mana);
     }
 
     public int getMana() {
@@ -29,7 +29,7 @@ public class Mago extends Personaje {
     @Override
     public void mostrarInfo() {
         super.mostrarInfo();
-        System.out.println("  🔵 Maná: " + mana);
+        System.out.println("   Maná: " + mana);
         System.out.println("═══════════════════════════════");
     }
 }
